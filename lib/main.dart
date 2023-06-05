@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 
-main() => runApp(QuestionsApp());
+main() => runApp(const QuestionsApp());
 
-class QuestionsApp extends StatelessWidget {
-  QuestionsApp({super.key});
-
+class QuestionsAppState extends State<QuestionsApp> {
   final List<String> questions = [
     "What's your favorite video game?",
     "What's your favorite movie?",
@@ -39,5 +37,14 @@ class QuestionsApp extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class QuestionsApp extends StatefulWidget {
+  const QuestionsApp({super.key});
+
+  @override
+  QuestionsAppState createState() {
+    return QuestionsAppState();
   }
 }
