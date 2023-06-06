@@ -4,8 +4,8 @@ class Question extends StatelessWidget {
   final String textQuestion;
 
   const Question({
-    super.key,
     required this.textQuestion,
+    super.key,
   });
 
   @override
