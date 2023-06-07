@@ -28,10 +28,10 @@ class _QuestionsAppState extends State<QuestionsApp> {
         body: Column(
           children: [
             Question(questionText: questions[_selectedQuestion]),
-            const Answer(answerText: 'Answer 1'),
-            const Answer(answerText: 'Answer 2'),
-            const Answer(answerText: 'Answer 3'),
-            const Answer(answerText: 'Answer 3'),
+            Answer(answerText: 'Answer 1', selected: _answer),
+            Answer(answerText: 'Answer 3', selected: _answer),
+            Answer(answerText: 'Answer 3', selected: _answer),
+            Answer(answerText: 'Answer 2', selected: _answer),
           ],
         ),
       ),
