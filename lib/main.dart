@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './question.dart';
+import './answer.dart';
 
 main() => runApp(const QuestionsApp());
 
@@ -26,16 +27,11 @@ class _QuestionsAppState extends State<QuestionsApp> {
         ),
         body: Column(
           children: [
-            Question(textQuestion: questions[_selectedQuestion]),
-            const TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-              ),
-            ),
-            ElevatedButton(
-              onPressed: _answer,
-              child: const Text('Answer')
-            ),
+            Question(questionText: questions[_selectedQuestion]),
+            const Answer(answerText: 'Answer 1'),
+            const Answer(answerText: 'Answer 2'),
+            const Answer(answerText: 'Answer 3'),
+            const Answer(answerText: 'Answer 3'),
           ],
         ),
       ),
